@@ -1,4 +1,5 @@
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 import Header from "./components/Header";
 import Meal from "./components/Meal";
 import Modal from "./components/UI/Modal";
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Meal />
         <Cart />
+        <Checkout />
       </CartContextProvider>
     </UserProgressContextProvider>
   );
