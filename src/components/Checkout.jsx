@@ -20,15 +20,22 @@ const Checkout = () => {
     hideCheckout();
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const fd = new FormData(event.target);
+    const customerData = Object.fromEntries(fd.entries());
+  };
+
   return (
     <Modal open={progress === "checkout"} onClose={handleClose}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2>Checkout</h2>
         <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
+
         <Input label="Full name" type="text" id="full-name" required />
         <Input label="Email Address" type="email" id="email" required />
         <Input label="Street" type="text" id="street" required />
-
         <div className="control-row">
           <Input label="Postal code" type="text" id="postal-code" required />
           <Input label="City" type="text" id="city" required />
