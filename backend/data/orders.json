@@ -26,5 +26,33 @@
       "city": "Hà Nội"
     },
     "id": "130.43905544868494"
+  },
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 2
+      },
+      {
+        "id": "m3",
+        "name": "Caesar Salad",
+        "price": "7.99",
+        "description": "Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings.",
+        "image": "images/caesar-salad.jpg",
+        "quantity": 2
+      }
+    ],
+    "customer": {
+      "name": "Đoàn Quốc Khanh",
+      "email": "khanhmathias532211@gmail.com",
+      "street": "Vũ Tông Phanh, Thanh Xuân",
+      "postal-code": "000000",
+      "city": "Hà Nội"
+    },
+    "id": "389.1352889351474"
   }
 ]
